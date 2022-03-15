@@ -9,7 +9,6 @@ jobs:
         id: hello
         uses: zsfVishnu/loggers-action@v1.1
         with:
-          who-to-greet: "Mona the Octocat"
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
           pr_number: ${{ github.event.number }}
