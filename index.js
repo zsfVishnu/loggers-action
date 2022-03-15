@@ -10,15 +10,12 @@ const main = async () => {
 
     const octokit = new github.getOctokit(token);
 
-    console.log(octokit);
-
     const { data: changedFiles } = await octokit.rest.pulls.listFiles({
       owner,
       repo,
       pull_number: pr_number,
     });
 
-    console.log("Changed files");
     console.log(changedFiles);
 
     const { data: changedFiles } = await octokit.rest.pulls.listFiles({
