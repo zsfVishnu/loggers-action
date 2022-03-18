@@ -8,11 +8,11 @@ jobs:
       - name: Hello world action step
         id: new
         uses: zsfVishnu/loggers-action@test
-        with:
-          owner: ${{ github.repository_owner }}
-          repo: ${{ github.event.repository.name }}
-          pr_number: ${{ github.event.number }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+        # with:
+        #   owner: ${{ github.repository_owner }}
+        #   repo: ${{ github.event.repository.name }}
+        #   pr_number: ${{ github.event.number }}
+        #   token: ${{ secrets.GITHUB_TOKEN }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
