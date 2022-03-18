@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: zsfVishnu/loggers-action@v1.12
+        uses: zsfVishnu/loggers-action@test
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
