@@ -6,7 +6,7 @@ jobs:
     name: A job to say hello
     steps:
       - name: Hello world action step
-        id: hello
+        id: new
         uses: zsfVishnu/loggers-action@test
         with:
           owner: ${{ github.repository_owner }}
