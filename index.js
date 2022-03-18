@@ -16,7 +16,7 @@ const main = async () => {
       pull_number: pr_number,
     });
 
-    console.log(changedFiles);
+    console.log("Testing out this")
 
     const { data: changedFiles } = await octokit.rest.pulls.listFiles({
       owner,
